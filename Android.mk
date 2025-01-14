@@ -1,0 +1,7 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := recovery
+LOCAL_MODULE_CLASS := RECOVERY_RAMDISK
+LOCAL_SRC_FILES := $(LOCAL_PATH)/recovery
+include $(BUILD_RECOVERY_IMAGE)
