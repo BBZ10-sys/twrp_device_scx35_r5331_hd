@@ -1,0 +1,4 @@
+<manifest>
+    <project name="BBZ10-sys/twrp_device_scx35_r5331_hd" path="device/spreadtrum/scx35_r5331_hd" remote="github" revision="master" />
+</manifest>
+

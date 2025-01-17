@@ -1,7 +1,8 @@
-LOCAL_PATH := $(call my-dir)
+ifneq ($(filter scx35_r5331_hd,$(TARGET_DEVICE)),)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := recovery
-LOCAL_MODULE_CLASS := RECOVERY_RAMDISK
-LOCAL_SRC_FILES := $(LOCAL_PATH)/recovery
-include $(BUILD_RECOVERY_IMAGE)
+LOCAL_PATH := device/Spreadtrum/scx35_r5331_hd
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif
+
